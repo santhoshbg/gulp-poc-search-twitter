@@ -1,0 +1,73 @@
+@import 'variable';
+.home-page-wrapper {
+    .search-header {
+        margin: $margin-twnty-zero;
+        h3 {
+            color: $header-color;
+            padding: $header-padding;
+            border-bottom: $header-border-bottom;
+        }
+    }
+    .twitter-search-component {
+        .twitter-search-box {
+            position: $position-rel;
+            .searchText {
+                width: $width-main;
+                height: $height-seventy;
+                font-size: $font-thirty;
+                border: $border-main;
+                padding: $padding-main;
+            }
+            .searchData {
+                position: $position-abs;
+                right: $right-zero;
+                top: $top-zero;
+                border: $border-main;
+                color: $white;
+                font-size: $font-thirty;
+                padding: $padding-main-search;
+                height: $height-seventy;
+                line-height: $line-height-fourty;
+                background: $btnbg;
+            }
+        }
+        .twitter-search-results {
+            margin: $margin-fourty-zero;
+            #seasons {
+                .wrap {
+                    background: white;
+                    margin-bottom: $margin-bottom-ten;
+                    border: $border-second;
+                    box-shadow: $box-shadow-four;
+                    .image-container {
+                        width: $width-twelve;
+                        display: $display-inline-block;
+                        padding: $padding-twenty-fourty;
+                    }
+                    .name-date-wrap {
+                        width: $width-eight;
+                        display: $display-inline-block;
+                        padding: $padding-ten;
+                        margin-top: $margin-top-ten;
+                        .uname {
+                            font-size: $font-eighteen;
+                            font-weight: $font-bold;
+                            padding: $padding-ten;
+                        }
+                        .created-date {
+                            @extend .uname;
+                        }
+                        .text-container {
+                            width: $width-main;
+                            display: $display-inline-block;
+                            @extend .uname;
+                            font-weight: $font-normal;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {}
