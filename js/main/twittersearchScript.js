@@ -2,7 +2,8 @@ class TwitterSearchComponent {
     constructor() {}  
     draw() {
         var searchData;
-        fetch("twittersearch.json")
+		// fetch("twittersearch.json")
+        fetch("https://aravindtwitter.herokuapp.com/twittersearch?key=adobe")
             .then(function (response) {
                     response.json().then(function (responseData) {
                     console.log(responseData);
